@@ -6,6 +6,8 @@
     <title>Greenden</title>
     <!-- tailwindcss - CDN - Link -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> 
+    <!-- fontawesome - CDN - Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -13,7 +15,7 @@
     <nav class="bg-green-100 p-4 flex justify-between items-center shadow-xl sticky top-0">
         <h1 class="font-bold text-2xl">GREENDEN</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
         
@@ -24,6 +26,19 @@
             <li class="hover:underline"><a href="./contact.html">Contact</a></li>
         </ul>
     </nav> 
+
+    <!-- side navbar -->
+
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="closetag" class="cursor-pointer"><i class="fa fa-close" style="font-size:20px"></i></p>
+        </div>
+        <ul class="flex gap-10 flex-col items-center">
+            <li class="hover:underline"><a href="./index.html">Home</a></li>
+            <li class="hover:underline"><a href="./products.html">Products</a></li>
+            <li class="hover:underline"><a href="./contact.html">Contact</a></li>
+        </ul>
+    </section>
 
     <!-- hero-section -->
     <section class="bg-green-100 p-5 flex justify-center gap-20 items-center">
@@ -132,6 +147,8 @@
         <p>The standrad chunk of pics and docs used in this to create a model webpage using tailwind css</p>
         <p class="mt-4">@ 2003 Greenday.com</p>
     </section>
+
+    <script src="./index.js"></script>
 
 </body>
 </html>
